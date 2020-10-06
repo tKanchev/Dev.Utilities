@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace Dev.Utilities.Guids.Services.Guids
 {
-    public interface IGuidsService
+    public interface IGuidService
     {
         Task<Guid> GenerateSingle();
 

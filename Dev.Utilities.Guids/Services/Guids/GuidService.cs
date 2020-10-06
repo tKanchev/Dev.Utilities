@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace Dev.Utilities.Guids.Services.Guids
 {
-    public class GuidsService : IGuidsService
+    public class GuidService : IGuidService
     {
         public async Task<Guid> GenerateSingle()
             => await Task.Run(() => Guid.NewGuid());

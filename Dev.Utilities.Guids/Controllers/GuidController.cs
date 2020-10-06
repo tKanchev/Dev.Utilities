@@ -7,9 +7,9 @@ namespace Dev.Utilities.Guids.Controllers
 {
     public class GuidController : BaseController
     {
-        private readonly IGuidsService guidsService;
+        private readonly IGuidService guidsService;
 
-        public GuidController(IGuidsService guidsService)
+        public GuidController(IGuidService guidsService)
         {
             this.guidsService = guidsService;
         }

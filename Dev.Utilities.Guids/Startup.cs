@@ -16,7 +16,7 @@ namespace Dev.Utilities.Guids
 
         public void ConfigureServices(IServiceCollection services)
             => services
-                .AddTransient<IGuidsService, GuidsService>()
+                .AddTransient<IGuidService, GuidService>()
                 .AddControllers();
         
 
