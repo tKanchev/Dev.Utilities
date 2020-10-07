@@ -16,6 +16,7 @@ namespace Dev.Utilities.Guids
 
         public void ConfigureServices(IServiceCollection services)
             => services
+                .AddCors()
                 .AddTransient<IGuidService, GuidService>()
                 .AddControllers();
         

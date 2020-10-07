@@ -15,13 +15,11 @@ namespace Dev.Utilities.Guids.Controllers
         }
 
         [HttpGet]
-        [Route(nameof(GetSingle))]
-        public async Task<IActionResult> GetSingle()
+        public async Task<IActionResult> Get()
             => Ok(await this.guidsService.GenerateSingle());
 
         [HttpPost]
-        [Route(nameof(GetBulk))]
-        public async Task<IActionResult> GetBulk([FromBody] int amount)
+        public async Task<IActionResult> Post([FromBody] int amount)
             => Ok(await this.guidsService.GenerateBulk(amount));
     }
 }

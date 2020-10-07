@@ -17,6 +17,10 @@ namespace Dev.Utilities.Infrastructure.Extensions
                 .UseHttpsRedirection()
                 .UseRouting()
                 .UseAuthorization()
+                .UseCors(x => x
+                    .AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader())
                 .UseEndpoints(endpoints =>
                 {
                     endpoints.MapControllers();
