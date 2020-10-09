@@ -6,27 +6,25 @@ namespace Dev.Utilities.Infrastructure.Extensions
 {
     public static class ApplicationBuilderExtensions
     {
-        public static IApplicationBuilder UseDefaultConfiguration(this IApplicationBuilder builder, IWebHostEnvironment env)
+        public static IApplicationBuilder UseDefaultConfiguration(this IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
-                builder.UseDeveloperExceptionPage();
+                app.UseDeveloperExceptionPage();
             }
 
-            builder
-                .UseHttpsRedirection()
+            return app
                 .UseRouting()
-                .UseAuthorization()
                 .UseCors(x => x
                     .AllowAnyOrigin()
                     .AllowAnyMethod()
-                    .AllowAnyHeader())
+                    .AllowAnyHeader()
+                )
+                .UseHttpsRedirection()
                 .UseEndpoints(endpoints =>
                 {
                     endpoints.MapControllers();
                 });
-
-            return builder;
         }
     }
 }
