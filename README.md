@@ -9,6 +9,9 @@
 ### UI Available
 #### http://guid-gen.com/
 
+### Api Available
+#### https://guid-gen-api.azurewebsites.net/guid
+
 ### Two simple functionalities:
 #### Single Guid - Generates a single and non-empty valid Guid
 #### Bulk Guid - Generates number of Guids
