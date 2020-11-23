@@ -1,3 +1,12 @@
+## If you find this tool useful, please support the poor developer with some of the dependency injections below :))
+#### https://www.buymeacoffee.com/kanchev07
+#### https://www.patreon.com/bePatron?u=45287861
+#### Or a direct injection at PayPal(better option)
+#### https://paypal.me/kanchev007
+
+### UI
+#### http://guid-gen.com/
+
 # Simple Guid Generator
 
 ### Two simple functionalities:
